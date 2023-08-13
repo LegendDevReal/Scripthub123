@@ -1,0 +1,35 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "EXP | GAMES(Dahood)", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+OrionLib:MakeNotification({
+	Name = "Welcome!",
+	Content = "Welcome, If u need help join the discord",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+-- dahood section
+local Main = Tab:AddSection({
+	Name = "Dahood Aim scripts"
+})
+Tab:AddButton({
+	Name = "ESP",
+	Callback = function()
+        loadstring(game.HttpGet(('https://raw.githubusercontent.com/LegendDevReal/ESP2/main/ESP2'),true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "AimLock",
+	Callback = function()
+        loadstring(game.HttpGet(('https://raw.githubusercontent.com/LegendDevReal/aIMLOCK/main/LOCK'),true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Slient Aim",
+	Callback = function()
+        loadstring(game.HttpGet(('https://raw.githubusercontent.com/LegendDevReal/Slient-aim/main/LOL'),true))()
+  	end    
+})
